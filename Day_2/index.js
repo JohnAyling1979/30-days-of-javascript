@@ -1,5 +1,11 @@
 function showConsolog() {
-    let challenge = '30 Days Of JavaScript';
+    const challenge = '30 Days Of JavaScript';
+    const numbers = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'.match(/\d+/g);
+    const annualIncome = parseInt(numbers[0]) * 12 + parseInt(numbers[2]) * 12 + parseInt(numbers[1]);
+    const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is also $the $result of &love& of tea&ching';
+    const firstName = 'John', lastName = 'Ayling', year = 1979;
+    const operandOne = 4;
+    const operandTwo = 3;
 
     console.log('Exercises: String Part');
     console.log(challenge);
@@ -28,26 +34,12 @@ function showConsolog() {
     console.log('30 Days of '.concat('JavaScript' ));
     console.log(challenge.repeat(2));
     console.log('Love is the best thing in this world. Some found their love and some are still looking for their love.'.match(/love/gi).length);
-
-    const numbers = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'.match(/\d+/g);
-    const annualIncome = parseInt(numbers[0]) * 12 + parseInt(numbers[2]) * 12 + parseInt(numbers[1]);
-
     console.log(annualIncome);
-
-    const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is also $the $result of &love& of tea&ching';
-
     console.log(sentence.replace(/[%$@#&]/g, ''));
     console.log();
     console.log('Exercises: Data types Part');
-
-    const firstName = 'John', lastName = 'Ayling', year = 1979;
-
     console.log(typeof firstName, typeof lastName, typeof year);
     console.log('Arithmetic Operators Part');
-
-    const operandOne = 4;
-    const operandTwo = 3;
-
     console.log(operandOne + operandTwo);
     console.log(operandOne * operandTwo);
     console.log(operandOne / operandTwo);
